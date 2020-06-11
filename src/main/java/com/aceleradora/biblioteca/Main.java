@@ -1,12 +1,14 @@
 package com.aceleradora.biblioteca;
 
+import java.util.Arrays;
+
 public class Main {
 
     private static final String BOAS_VINDAS = "Bem vinda(o) à biblioteca, onde você encontra os melhores livros de Porto Alegre.";
 
     private static final Livro[] LIVROS = new Livro[]{
-            new Livro("Program Development in Java"),
-            new Livro("Use a cabeça: Padrões de projeto")
+            new Livro("Program Development in Java", Arrays.asList("Barbara Liskov")),
+            new Livro("Use a cabeça: Padrões de projeto", Arrays.asList("Kathy Sierra", "Elisabeth Freeman"))
     };
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class Main {
 
         System.out.println("Livros Disponiveis:");
         for (Livro livro : LIVROS) {
-            System.out.printf("- %s\n", livro.getTitulo());
+            System.out.printf("- %s\n -- %s\n", livro.getTitulo(), livro.getAutoria());
         }
     }
 }
