@@ -1,12 +1,10 @@
 package com.aceleradora.biblioteca;
 
-import java.util.List;
-
 class Livro {
     private String titulo;
-    private List<Autor> autoria;
+    private Autor[] autoria;
 
-    Livro(String titulo, List<Autor> autoria) {
+    Livro(String titulo, Autor[] autoria) {
         this.titulo = titulo;
         this.autoria = autoria;
     }
@@ -15,7 +13,7 @@ class Livro {
         return titulo;
     }
 
-    List<Autor> getAutoria() {
+    Autor[] getAutoria() {
         return autoria;
     }
 }
