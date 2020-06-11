@@ -6,5 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println(BOAS_VINDAS);
+
+        System.out.println("Livros Disponiveis:");
+        System.out.println("- Program Development in Java");
+        System.out.println("- Use a cabeça: Padrões de projeto");
     }
 }
