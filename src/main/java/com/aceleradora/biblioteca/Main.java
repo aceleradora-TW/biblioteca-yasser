@@ -7,8 +7,13 @@ public class Main {
     private static final String BOAS_VINDAS = "Bem vinda(o) à biblioteca, onde você encontra os melhores livros de Porto Alegre.";
 
     private static final Livro[] LIVROS = new Livro[]{
-            new Livro("Program Development in Java", Arrays.asList("Barbara Liskov")),
-            new Livro("Use a cabeça: Padrões de projeto", Arrays.asList("Kathy Sierra", "Elisabeth Freeman"))
+            new Livro("Program Development in Java", Arrays.asList(
+                    new Autor("Barbara", "Liskov"))
+            ),
+            new Livro("Use a cabeça: Padrões de projeto", Arrays.asList(
+                    new Autor("Kathy", "Sierra"),
+                    new Autor("Elisabeth", "Freeman")
+            ))
     };
 
     public static void main(String[] args) {

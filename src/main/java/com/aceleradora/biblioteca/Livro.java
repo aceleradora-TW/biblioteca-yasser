@@ -4,9 +4,9 @@ import java.util.List;
 
 class Livro {
     private String titulo;
-    private List<String> autoria;
+    private List<Autor> autoria;
 
-    Livro(String titulo, List<String> autoria) {
+    Livro(String titulo, List<Autor> autoria) {
         this.titulo = titulo;
         this.autoria = autoria;
     }
@@ -15,7 +15,7 @@ class Livro {
         return titulo;
     }
 
-    List<String> getAutoria() {
+    List<Autor> getAutoria() {
         return autoria;
     }
 }
