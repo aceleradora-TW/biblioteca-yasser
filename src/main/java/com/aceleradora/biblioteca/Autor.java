@@ -9,8 +9,7 @@ class Autor {
         this.sobrenome = sobrenome;
     }
 
-    @Override
-    public String toString() {
+    String getNomeCompleto() {
         return nome + " " + sobrenome;
     }
 }
